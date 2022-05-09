@@ -7,7 +7,7 @@
     local chunk = require("chunk")
     local success = chunk.loadzip("testzip.zip","222222")
 
-    require("testservice")
+    skynet.newservice("testservice")
     Log.i("success ==",success)
     skynet.sleep(200)
     os.exit()
